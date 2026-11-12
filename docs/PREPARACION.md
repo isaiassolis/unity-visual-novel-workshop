@@ -39,7 +39,7 @@ Copia [`examples/textScript.nani`](../examples/textScript.nani) a la ubicación 
 
 El PDF mejorado explica en diez pasos cómo preparar y registrar recursos, personalizar la portada y comprender comandos como `@back`, `@bgm`, `@char` y `@choice`.
 
-**Pendiente:** publicar el archivo `docs/tutorial-nani-novel.pdf`.
+**Disponible:** [Abrir tutorial ilustrado (PDF)](tutorial-nani-novel-mejorado.pdf).
 
 ## 5. Si algo no aparece
 
