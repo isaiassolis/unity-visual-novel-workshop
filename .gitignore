@@ -1,0 +1,25 @@
+# Unity generated data
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.suo
+*.user
+*.tmp
+*.pidb
+*.booproj
+
+# Never add Naninovel's commercial package or its binaries.
+# IMPORTANT: .gitignore does not remove files already committed.
+[Aa]ssets/[Nn]aninovel/
+[Aa]ssets/[Nn]aninovel[Dd]ata/
+*.unitypackage
