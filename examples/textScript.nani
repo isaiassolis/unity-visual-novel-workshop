@@ -1,0 +1,130 @@
+; MEMORIAS DE PRIMAVERA — DEMO DEL TALLER
+; Recursos externos no incluidos. Registra fondos, personajes y música por separado.
+
+@back Aula
+@bgm SchoolMemories volume:0.2 fade:5
+@char Ana.Normal pos:25 scale:0.6
+Ana: Buenas tardes a todos, mi nombre es Ana.
+Ana: Hoy quería enseñarles cómo puede funcionar una novela visual sencilla.
+@char Luis.Normal pos:75 scale:0.6
+Luis: Hola, yo soy Luis.
+Luis: Este proyecto sirve para probar fondos, personajes, poses y decisiones.
+Ana: La idea es que cada decisión pueda llevarnos a una escena diferente.
+Luis: Entonces... ¿por dónde empezamos?
+@choice "Salir al patio" goto:.Patio
+@choice "Ir a las canchas" goto:.Canchas
+@choice "Quedarnos en el aula" goto:.AulaRuta
+@stop
+
+# Patio
+@back Patio
+@stopbgm
+@bgm ABrightNewChapter volume:0.2 fade:5
+@char Ana.Happy pos:25 scale:0.6
+Ana: Me gusta este lugar. Se siente más tranquilo.
+@char Luis.Happy pos:75 scale:0.6
+Luis: Sí, el patio tiene buen ambiente para hablar.
+Ana: Aquí podríamos agregar una escena de reflexión o una conversación importante.
+@choice "Preguntarle a Luis cómo se siente" goto:.PatioBueno
+@choice "Ignorar a Luis y cambiar de tema" goto:.PatioMalo
+@stop
+
+# PatioBueno
+@char Luis.Happy pos:75 scale:0.6
+Luis: Gracias por preguntar. La verdad, me siento mejor hablando contigo.
+@char Ana.Happy pos:25 scale:0.6
+Ana: Entonces hicimos bien en venir aquí.
+Luis: Esta sería una ruta positiva.
+@back Aula
+@char Ana.Happy pos:25 scale:0.6
+@char Luis.Happy pos:75 scale:0.6
+Ana: Al final, aprendimos que una buena decisión puede cambiar el tono de la historia.
+Luis: Fin de la ruta positiva.
+@stop
+
+# PatioMalo
+@char Luis.Sad pos:75 scale:0.6
+Luis: Ah... entiendo. Pensé que íbamos a hablar.
+@char Ana.Sad pos:25 scale:0.6
+Ana: Perdón, no quise sonar indiferente.
+Luis: Esta sería una ruta más triste.
+@back Pasillo
+@char Ana.Sad pos:25 scale:0.6
+@char Luis.Sad pos:75 scale:0.6
+Ana: A veces, una mala respuesta cambia todo el ambiente.
+Luis: Fin de la ruta triste.
+@stop
+
+# Canchas
+@back Canchas
+@char Luis.Happy pos:75 scale:0.6
+Luis: ¡Las canchas! Este lugar me gusta mucho.
+@char Ana.Normal pos:25 scale:0.6
+Ana: Aquí podríamos tener una escena más dinámica.
+Luis: Imagina que el jugador debe decidir si jugar, descansar o discutir.
+@choice "Aceptar jugar con Luis" goto:.Jugar
+@choice "Decirle que no quieres jugar" goto:.NoJugar
+@stop
+
+# Jugar
+@char Ana.Happy pos:25 scale:0.6
+Ana: Está bien, juguemos un rato.
+@char Luis.Happy pos:75 scale:0.6
+Luis: ¡Eso! Prometo no presumir si gano.
+Ana: Esta escena podría tener música alegre o efectos de público.
+@back Patio
+@char Ana.Happy pos:25 scale:0.6
+@char Luis.Happy pos:75 scale:0.6
+Luis: Después del partido, terminamos descansando en el patio.
+Ana: Fin de la ruta alegre.
+@stop
+
+# NoJugar
+@char Luis.Angry pos:75 scale:0.6
+Luis: ¿En serio? Vine hasta acá emocionado.
+@char Ana.Sad pos:25 scale:0.6
+Ana: Perdón, no estoy de humor para jugar.
+Luis: Esta escena muestra cómo una decisión puede generar conflicto.
+@back Pasillo
+@char Ana.Sad pos:25 scale:0.6
+@char Luis.Angry pos:75 scale:0.6
+Ana: Tal vez debí explicarlo mejor.
+Luis: Fin de la ruta de conflicto.
+@stop
+
+# AulaRuta
+@back Aula
+@char Ana.Normal pos:25 scale:0.6
+Ana: Decidimos quedarnos en el aula.
+@char Luis.Normal pos:75 scale:0.6
+Luis: Esta ruta puede servir para explicar o presentar información.
+Ana: También podemos cambiar poses sin cambiar de fondo.
+@char Ana.Happy pos:25 scale:0.6
+Ana: Por ejemplo, ahora estoy feliz.
+@char Luis.Sad pos:75 scale:0.6
+Luis: Y yo podría estar triste.
+@char Ana.Angry pos:25 scale:0.6
+Ana: O molesta si alguien no entrega su proyecto.
+@char Luis.Angry pos:75 scale:0.6
+Luis: Eso sonó muy específico...
+@choice "Terminar con final feliz" goto:.FinalFeliz
+@choice "Terminar con final serio" goto:.FinalSerio
+@stop
+
+# FinalFeliz
+@back Patio
+@char Ana.Happy pos:25 scale:0.6
+@char Luis.Happy pos:75 scale:0.6
+Ana: Al final, todos aprendimos a construir una novela visual básica.
+Luis: Con fondos, personajes, poses, decisiones y rutas.
+Ana: Fin del demo.
+@stop
+
+# FinalSerio
+@back Pasillo
+@char Ana.Normal pos:25 scale:0.6
+@char Luis.Normal pos:75 scale:0.6
+Luis: Este demo muestra que una historia corta puede tener varias rutas.
+Ana: Y que cada ruta puede cambiar el tono emocional de la escena.
+Luis: Fin del demo.
+@stop
