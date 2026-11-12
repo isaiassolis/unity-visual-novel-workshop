@@ -18,7 +18,7 @@
 | Archivo | Contenido |
 | --- | --- |
 | [Guion de ejemplo](examples/textScript.nani) | Diálogos de Ana y Luis, tres rutas iniciales y seis finales. |
-| `docs/tutorial-nani-novel.pdf` | **Pendiente de incorporar:** guía ilustrada de diez pasos preparada por el autor. |
+| [Tutorial ilustrado en PDF](docs/tutorial-nani-novel-mejorado.pdf) | Guía de diez pasos para personalizar el ejemplo, con capturas de Unity. |
 | [Guía de preparación](docs/PREPARACION.md) | Cómo crear tu propio proyecto y qué necesitas antes de seguir el PDF. |
 
 ## Requisitos
@@ -34,7 +34,7 @@
 2. Crea o importa fondos, personajes y música autorizados.
 3. Registra esos recursos en Naninovel con los identificadores que usa el guion, o adapta el guion a tus nombres.
 4. Incorpora [`examples/textScript.nani`](examples/textScript.nani) a la ubicación de scripts narrativos de tu proyecto y configúralo para ejecutarse.
-5. Sigue el tutorial PDF cuando esté disponible en `docs/`, personaliza la portada y prueba las opciones.
+5. Sigue el [tutorial ilustrado en PDF](docs/tutorial-nani-novel-mejorado.pdf), personaliza la portada y prueba las opciones.
 6. Recorre **todas las rutas**, no solamente la primera.
 
 El guion hace referencia a cuatro escenarios (`Aula`, `Patio`, `Pasillo`, `Canchas`), dos personajes (`Ana`, `Luis`) y cuatro expresiones por personaje (`Normal`, `Happy`, `Sad`, `Angry`). También hace referencia a `SchoolMemories` y `ABrightNewChapter`: **los archivos de música no están incluidos**. Puedes registrar pistas propias con esos nombres o modificar el guion.
