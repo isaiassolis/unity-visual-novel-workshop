@@ -1,3 +1,5 @@
+![Encabezado del taller](docs/assets/workshop-banner.svg)
+
 # Memorias de Primavera
 ### Taller práctico · Novela visual interactiva con Unity y Naninovel
 
